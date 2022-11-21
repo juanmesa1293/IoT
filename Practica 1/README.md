@@ -14,7 +14,7 @@ Con el desarrollo de la práctica se espera que el estudiante aprenda como:
 
 1. **Configuracion de entorno:** En este caso opte por usar debian ya que estoy un poco mas familiarizado con  el ambiente, ademas la maquina que ando usando fue dada por mi antiguo profesor de operativos, asi que esta bastante optmizada.
 
-![prueba maquina virtual](/resources/debian.png)
+![prueba maquina virtual](IoT/blob/main/Practica1/resources/debian.png)
 
 2. **Instalar docker** Captura del comando sudo docker, donde muestra que esta instalado en mi maquina virtual.
 
