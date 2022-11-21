@@ -18,41 +18,41 @@ Con el desarrollo de la práctica se espera que el estudiante aprenda como:
 
 2. **Instalar docker** Captura del comando sudo docker, donde muestra que esta instalado en mi maquina virtual.
 
-![prueba instalacion docker](/resources/sudo-docker.png)
+![prueba instalacion docker](resources/sudo-docker.png)
 
 3. 
     * Reconocimiento de herramientas de red: Identificar configuración de red por medio del comando ip e ifconfig. 
     Podemos observar con el comando ifconfig las interfaces creadas ![ifconfig](/resources/ifconfig.png)
     en este caso, al no funcionarme directamente el comando tuve que hacerlo con el comando que se puede puede observar en la imagen, tambien podemos notar que tenemos 3 interfaces donde la primera es la que creo docker y la segunda es la ip de la maquina virtual
-    ![ipaddress](/resources/ipaddress.png)
+    ![ipaddress](resources/ipaddress.png)
     aqui podemos ver un poco mas detalladas las direcciones que tenemos en el momento
 
     * Con el comando ss, podemos ver por ejemplo que puertos estan usados por el servidor X11, que en este caso es la interfaz grafica 
-    ![x11](/resources/x11.png)
+    ![x11](resources/x11.png)
 
 4. Identificacion de servicios desplegados: 
     * Desplegando el comando lsof podemos observar los servicios desplegados y a su vez podriamos deducir a que aplicacion puede estar relacionado
         * Systemd: a grandes rasgos podriamos decir que es nuestro sistema operativo (aunque en realidad es algo mas profundo).
-        ![systemd](/resources/systemd.png)
+        ![systemd](resources/systemd.png)
         * Avahi: Un daemon que permite a los programas encontrar los servicios de descubrimiento y conexión a través del protocolo mDNS/DNS-SD.
-        ![avahi](/resources/avahi.png)
+        ![avahi](resources/avahi.png)
         * rsyslogd: es una utilidad de linux que permite reenviar mensajes de registro en una red IP. Esta implementado por un protocolo basico de syslog
-        ![rsyslogd](/resources/rsyslogd.png)
+        ![rsyslogd](resources/rsyslogd.png)
         * Xwayland: es uno de los muchos protocolos de servidor gráfico para linux
-        ![Xwayland](/resources/xwayland.png)
+        ![Xwayland](resources/xwayland.png)
         * firefox-e: El navegador por defecto que linux 
-        ![firefox](/resources/firefox.png)
+        ![firefox](resources/firefox.png)
 
 5. Evaluacion de los scripts en Python:
     Teniendo cuenta la practica, lo que pude observar corriendo los dos programas en python (uno con TCP y el otro con UDP), es que mandando el mensaje por UDP, llegaba directo en cambio el mensaje por TCP llegaba por trozos, para una prueba de esto las siguientes dos imagenes
-    ![tcp-server](/resources/TCP-server.png)
-    ![udp-server](/resources/UDP-server.png)
+    ![tcp-server](resources/TCP-server.png)
+    ![udp-server](resources/UDP-server.png)
     Anexando a esto tambien podemos ver como en el cliente por TCP se recibia por pedazos, en cambio UDP mandaba el mensaje completo
-    ![tcp-client](/resources/TCP-client.png)
-    ![udp-client](/resources/UDP-client.png)
+    ![tcp-client](resources/TCP-client.png)
+    ![udp-client](resources/UDP-client.png)
     Y por ultimo podemos observar por los puertos que escucha cada uno que en nuestro caso ambos escuchan por el puerto 10000
-    ![tcp-port](/resources/TCP-port.png)
-    ![udp-port](/resources/UDP-port.png)
+    ![tcp-port](resources/TCP-port.png)
+    ![udp-port](resources/UDP-port.png)
 
 ## Conclusiones
 
