@@ -23,6 +23,7 @@ Con el desarrollo de la práctica se espera que el estudiante aprenda como:
 3. 
     * Reconocimiento de herramientas de red: Identificar configuración de red por medio del comando ip e ifconfig. 
     Podemos observar con el comando ifconfig las interfaces creadas ![ifconfig](resources/ifconfig.png)
+    
     en este caso, al no funcionarme directamente el comando tuve que hacerlo con el comando que se puede puede observar en la imagen, tambien podemos notar que tenemos 3 interfaces donde la primera es la que creo docker y la segunda es la ip de la maquina virtual
     ![ipaddress](resources/ipaddress.png)
     aqui podemos ver un poco mas detalladas las direcciones que tenemos en el momento
