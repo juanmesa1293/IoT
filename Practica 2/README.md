@@ -10,4 +10,4 @@ En esta práctica se completará la implementación de un servidor Web, es decir
   4. Identificar los verbos Http y su uso para un caso de ejemplo.
 
 
-![kanade](/resources/kanade.jpeg)
+![kanade](resources/kanade.jpeg)
