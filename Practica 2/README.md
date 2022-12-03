@@ -38,3 +38,4 @@ En esta práctica se completará la implementación de un servidor Web, es decir
   ![PATCH](resources/MethodPatch1.PNG)
   ![PATCH](resources/MethodPatch2.PNG)
   ![PATCH](resources/MethodPatch3.PNG)
+
