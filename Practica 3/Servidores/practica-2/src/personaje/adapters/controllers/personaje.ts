@@ -1,5 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Patch, Post, Put } from '@nestjs/common';
+import { Person } from 'src/personaje/domain/models/personaje.model';
 import { AppService } from '../../domain/services/personaje.service';
+
 
 interface Caracter{
   nombre: string,
@@ -10,8 +12,10 @@ interface Caracter{
 }
 
 @Controller()
-export class Personaje {
-  constructor(private readonly appService: AppService) {}
+export class Personaje extends Person{
+  constructor(private readonly appService: AppService) {
+    super();
+  }
 
   private personajes : Caracter[] = [{
    nombre: "Alice Síntesis Treinta",
