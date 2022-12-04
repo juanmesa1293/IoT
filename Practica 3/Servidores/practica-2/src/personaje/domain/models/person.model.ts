@@ -4,3 +4,4 @@ export abstract class Person {
     objeto_divino: string;
     edad: number;
  }
+ 
