@@ -1,5 +1,7 @@
-export abstract class Person {
-    name: string;
-    lastName: string;
-    age: number;
- }
+import { Person } from "./person.model";
+
+export class Personaje extends Person {
+    territorio:string;
+    raza:string;
+}
+ 
