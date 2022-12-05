@@ -39,3 +39,5 @@ En esta práctica se completará la implementación de un servidor Web, es decir
   ![PATCH](resources/MethodPatch2.PNG)
   ![PATCH](resources/MethodPatch3.PNG)
 
+# Hecho por: Juan Carlos Mesa
+![Kanade](resources/kanade.jpeg)

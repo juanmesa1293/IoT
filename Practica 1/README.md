@@ -59,3 +59,6 @@ Con el desarrollo de la práctica se espera que el estudiante aprenda como:
 
     * Como conclusion de esta practica, podemos decir que gracias a los comandos ss,netstat y lsof, podemos monitorear porque puerto las aplicaciones esuchan y a su vez detectar que tantas aplicaciones estan usando algun puerto sin que nos demos cuenta
     * Tambien podemos decir que aunque en este caso es un ejercicio netamente academico, el puerto UDP para este caso fue mas eficiente a la hora de enviar el mensaje ya que recibe mas caracteres y eso hace que sea mas practico.
+
+# Hecho por: Juan Carlos Mesa
+![Kanade](resources/kanade.jpeg)

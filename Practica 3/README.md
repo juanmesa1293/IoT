@@ -52,3 +52,6 @@ Por ultimo el metodo patch, quise cambiarlo un poco y ahora podemos cambiar el n
 
 ![Patch](resources/PatchLogeado.PNG)
 ![Patch](resources/GetLaterPatch.PNG)
+
+# Hecho por: Juan Carlos Mesa
+![Kanade](resources/kanade.jpeg)
