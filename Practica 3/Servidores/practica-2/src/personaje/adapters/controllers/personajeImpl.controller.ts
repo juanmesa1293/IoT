@@ -1,4 +1,5 @@
-import { Controller, Delete, Get, Inject, Patch, Post, Put } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Inject, Param, Patch, Post, Put, UseGuards } from "@nestjs/common";
+import { JwtAuthGuard } from "src/auth/jwt-auth.guard";
 import { Personaje } from "src/personaje/domain/models/personaje.model";
 import { PersonajeService } from "src/personaje/domain/services/personaje.service";
 import { PersonajeController } from "./personaje.controller";
@@ -24,8 +25,9 @@ export class PersonajeControllerImpl implements PersonajeController{
         }
     }
 
+    @UseGuards(JwtAuthGuard)
     @Post()
-    create(datos: Personaje) {
+    create(@Body() datos: Personaje) {
         try{
             return this.personajeService.create(datos);
         }catch(e){
@@ -33,8 +35,9 @@ export class PersonajeControllerImpl implements PersonajeController{
         }
     }
 
+    @UseGuards(JwtAuthGuard)
     @Put(":id")
-    update(datos: Personaje, id: number) {
+    update(@Body() datos: Personaje, @Param('id')id: number) {
         try{
             return this.personajeService.update(id,datos);
         }catch(e){
@@ -42,21 +45,33 @@ export class PersonajeControllerImpl implements PersonajeController{
         }
     }
     
+    @UseGuards(JwtAuthGuard)
     @Delete(":id")
-    delete(id: number) {
+    delete(@Param('id')id: number) {
         try{
             return this.personajeService.delete(id);
           }catch(e){
             return errReturn(e,"Error al eliminar al personaje");
           }
     }
-    
+
+    @UseGuards(JwtAuthGuard)
     @Patch(":id/edad/:edad")
-    updateAge(id: number, edad: number) {
+    updateAge(@Param('id')id: number, @Param('id')edad: number) {
         try{
             return this.personajeService.updateAge(id,edad);
           }catch(e){
             return errReturn(e,"Error al modificar la edad del personaje");
+          }
+    }
+
+    @UseGuards(JwtAuthGuard)
+    @Patch(":id/name/:name")
+    updateName(@Param('id')id: number, @Param('name')name: string) {
+        try{
+            return this.personajeService.updateName(id,name);
+          }catch(e){
+            return errReturn(e,"Error al modificar el nombre del personaje");
           }
     }
     

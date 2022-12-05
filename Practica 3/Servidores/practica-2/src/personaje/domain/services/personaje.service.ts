@@ -37,5 +37,12 @@ export interface PersonajeService {
     */
    updateAge(id: number, age: number): Personaje
 
+   /**
+    * Cambia el nombre del personaje
+    * @param id Identificador unico del personaje
+    * @param name nuevo nombre del personaje
+    */
+    updateName(id: number, name: string): Personaje
+
     
 }

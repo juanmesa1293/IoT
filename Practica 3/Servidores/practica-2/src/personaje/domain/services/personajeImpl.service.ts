@@ -12,20 +12,6 @@ export class personajeServiceImpl implements PersonajeService{
         territorio: "Imperio Humano",
         raza: "Humana"},
         {
-        nombre: "Eldrie Síntesis Treinta y uno",
-        ocupacion: "Caballero de la integridad",
-        objeto_divino: "Látigo de la Escama Helada",
-        edad: 28,
-        territorio: "Imperio Humano",
-        raza: "humana"},
-        {
-        nombre: "Deusolbert Síntesis Siete",
-        ocupacion: "Caballero de la integridad",
-        objeto_divino: "Arco de la Llama Ardiente",
-        edad: 40,
-        territorio: "Imperio Humano",
-        raza: "humana"},
-        {
         nombre: "Viksul Ur Shasta",
         ocupacion: "Comandante de los caballeros oscuros",
         objeto_divino: "Oborogasumi",
@@ -37,26 +23,30 @@ export class personajeServiceImpl implements PersonajeService{
     list(): Personaje[] {
         return this.personajes;
     }
-    create(personaje: Personaje): Personaje {
-        this.personajes.push(personaje);
-        return personaje;
+    create(caracter: Personaje): Personaje {
+        this.personajes.push(caracter);
+        return caracter;
     }
-    update(id: number, personaje: Personaje): Personaje {
-        this.personajes[id] = personaje;
+    update(id: number, caracter: Personaje): Personaje {
+        this.personajes[id] = caracter;
         return this.personajes[id];
     }
     delete(id: number): boolean {
-        const cantPersonajes = this.personajes.length;
-        this.personajes.splice(id,1);
-        if(cantPersonajes == this.personajes.length){
+        const pj = this.personajes.splice(id,1);
+        console.log(pj.length);
+        if(pj.length == 0){
             return false;
         }else{
             return true;
         }
-        
     }
     updateAge(id: number, age: number): Personaje {
         this.personajes[id].edad = age;
+        return this.personajes[id];
+    } 
+
+    updateName(id: number, name: string): Personaje {
+        this.personajes[id].nombre = name;
         return this.personajes[id];
     } 
 }
