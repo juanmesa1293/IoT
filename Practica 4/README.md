@@ -25,11 +25,7 @@ Para esta parte de la practica implementamos una base de datos con ayuda de Mong
 ![get](resources/GetMongo.PNG)
 
 2. Ahora hacemos un POST para inyectarle algunos datos a nuestra base de datos
-![post](resources/PostMongo.PNG)
-
-
-ahora volvemos a hacer un GET para ver si nuestro inyeccion fue correcta![postget](resources/GetLuegoPost.PNG)
-Podemos ver que el id es automatico gracias a MongoDB
+![post](resources/PostMongo.PNG)ahora volvemos a hacer un GET para ver si nuestro inyeccion fue correcta![postget](resources/GetLuegoPost.PNG)Podemos ver que el id es automatico gracias a MongoDB
 
 3. Ahora haremos un PUT con nuestro dato agregado
 ![put](resources/PutMongo.PNG)
