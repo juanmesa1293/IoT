@@ -28,8 +28,7 @@ Para esta parte de la practica implementamos una base de datos con ayuda de Mong
 ![post](resources/PostMongo.PNG)
 
 
-ahora volvemos a hacer un GET para ver si nuestro inyeccion fue correcta
-![postget](resources/GetLuegoPost.PNG)
+ahora volvemos a hacer un GET para ver si nuestro inyeccion fue correcta![postget](resources/GetLuegoPost.PNG)
 Podemos ver que el id es automatico gracias a MongoDB
 
 3. Ahora haremos un PUT con nuestro dato agregado
