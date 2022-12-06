@@ -17,6 +17,10 @@ Y una segunda donde nos muestra el visor ya que en el paso a paso nos pedia acti
 
 por ultimo decir que fue un dolor de cabeza al inicio implementarlo pero cuando encuentras tus errores se puede ver que es bastante sencillo.
 
+## Extra
+
+Como dato adicional si abro el mismo link del proyecto de deta https://6lmo0j.deta.dev/ desde Firefox esta es la vista que poseo ![firfeox](resources/Mozila.PNG)
+
 # Base de datos MongoDB
 
 Para esta parte de la practica implementamos una base de datos con ayuda de MongoDB, para este caso hicimos las pruebas del funcionamiento con PostMan, 
