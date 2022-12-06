@@ -25,23 +25,24 @@ Para esta parte de la practica implementamos una base de datos con ayuda de Mong
 ![get](resources/GetMongo.PNG)
 
 2. Ahora hacemos un POST para inyectarle algunos datos a nuestra base de datos
-![post](resources/PostMongo.PNG)ahora volvemos a hacer un GET para ver si nuestro inyeccion fue correcta![postget](resources/GetLuegoPost.PNG)Podemos ver que el id es automatico gracias a MongoDB
+![post](resources/PostMongo.PNG)
 
-3. Ahora haremos un PUT con nuestro dato agregado
+3. ahora volvemos a hacer un GET para ver si nuestro inyeccion fue correcta, tambien podemos ver que el id es automatico gracias a MongoDB
+![postget](resources/GetLuegoPost.PNG)
+
+4. Ahora haremos un PUT con nuestro dato agregado
 ![put](resources/PutMongo.PNG)
 
-
-Y confirmamos con un GET para ver si fue correcto
+5. confirmamos con un GET para ver si fue correcto
 ![putget](resources/GetLuegoPut.PNG)
 
-4. Siguiendo con la practica ahora haremos un DELETE con el id que mongoDB le puso a nuestro dato
+6. Siguiendo con la practica ahora haremos un DELETE con el id que mongoDB le puso a nuestro dato
 ![delete](resources/DeleteMongo.PNG)
 
-5. Por ultimo hacemos un PATCH en este caso cambiando el nombre de nuestro dato
+7. Por ultimo hacemos un PATCH en este caso cambiando el nombre de nuestro dato
 ![patch](resources/PatchMongo.PNG)
 
-
-y volvemos a comprar gracias a nuestro GET
+8. volvemos a comprar gracias a nuestro GET
 ![patchget](resources/GetLuegoPatch.PNG)
 
 Finalizando ya la practica como ultima evidencia podemos observar desde el gestor de MongoDB como nuestro dato estuvo luego de todas las pruebas que le hicimos sigue ahi
